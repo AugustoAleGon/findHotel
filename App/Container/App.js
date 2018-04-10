@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
 import {
-  Text,
   View,
   Platform
 } from 'react-native'
 
 // Importing Local Libraries
 import DebugConfig from '../Config/DebugConfig'
+import RootContainer from './RootContainer'
 
 type Props = {};
 class App extends Component<Props> {
@@ -16,15 +16,7 @@ class App extends Component<Props> {
         flex: 1,
         paddingTop: Platform.OS === 'ios' ? 20 : 0
       }}>
-        <Text>
-          Welcome to React Native!
-        </Text>
-        <Text>
-          To get started, edit App.js
-        </Text>
-        <Text>
-          Hello App!
-        </Text>
+        <RootContainer />
       </View>
     )
   }
